@@ -1,0 +1,19 @@
+ <div class="header" ng-controller="HeaderCtrl as vm">
+      <div class="padding0 logo">
+            <a class="navbar-brand header-logo" href="#">Home</a>
+        </div>
+        <div class="container">
+            <div class="col-md-10 padding0">
+                 <ul class="nav navbar-nav tab">
+			        <li ng-class="{ active: vm.isActive('/user')}"><a href="#/user">User</a></li>
+			        <li ng-class="{ active: vm.isActive('/employee')}"><a href="#/employee">Employee</a></li>
+			    </ul>
+            </div>
+            <div class="col-md-2 user-detail">
+                <span class="glyphicon glyphicon-user user-icon"></span> {{vm.userName}}<span data-toggle="tooltip" data-placement="bottom" title="Log out" class="glyphicon glyphicon-off logout-icon"></span>
+            </div>
+        </div>
+ </div>
+
+
+ 

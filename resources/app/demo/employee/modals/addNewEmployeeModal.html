@@ -1,0 +1,20 @@
+<div id="{{vm.modalId}}" class="top-lightbox comment-popup" ng-init="vm.init()">
+			<h2>Employee Add
+             <span class="icon close-lightbox" pn-de-modal-close>close</span>
+        	</h2>
+
+<table class="table table-bordered table-striped">
+<tr>
+<td>Name</td>
+<td>Employee Name</td>
+<td>Email</td>
+</tr>
+<tr>
+<td><input type="text" ng-model="vm.name" /></td>
+<td><input type="text" ng-model="vm.username" /></td>
+<td><input type="text" ng-model="vm.email" /></td>
+</tr>
+</table>
+
+<td><button type="button" ng-click="vm.addDetails()" pn-de-modal-close>Add </button></td>
+</div> 

@@ -1,0 +1,37 @@
+<div class="container">
+<div class="row">
+<center><h4>Employee List</h4></center>
+<table class="table table-bordered table-striped">
+<tr>
+<td>Name</td>
+<td>Employee Name</td>
+<td>Email</td>
+<td>Edit</td>
+</tr>
+<tr ng-repeat="emp in vm.employeDetails">
+<td>{{emp.name}}</td>
+<td>{{emp.username}}</td>
+<td>{{emp.email}}</td>
+<td><button type="button" ng-click="vm.editDetails(emp)">Edit Detail</button></td>
+</tr>
+</table>
+<div>
+<button type="button" pn-de-modal-open="{selector: '#addEmployeeModal', isLightbox: true}">Add Employee</button>
+</div>
+	<div class="col-md-12" ng-if="vm.edit"> 
+			<demo-edit-Employee
+			return-obj="vm.editEmpoyeObj">
+			</demo-edit-Employee>
+	</div>  
+</div>
+ </div>
+ 
+  <!--  Pop Up section -->
+    <div class="lightbox-container">
+      <add-employee-modal 
+      modal-id="addEmployeeModal"
+	  return-obj="vm.editEmpoyeObj"
+	  callback-add-data="vm.updateEmpDetail(returnObj)">
+       </add-employee-modal>
+    </div>
+    <!--  Pop Up section ends here -->

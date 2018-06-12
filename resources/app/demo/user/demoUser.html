@@ -1,0 +1,36 @@
+<div class="container">
+<div class="row">
+ <div>
+<center><h4>User List</h4></center>
+<table class="table table-bordered table-striped">
+<tr>
+<th>Name</th>
+<th>User Name</th>
+<th>Email</th>
+<th>Street</th>
+<th>City</th>
+<th>Details</th>
+</tr>
+
+<tr ng-repeat="user in userList">
+<td>{{user.name}}</td>
+<td>{{user.username}}</td>
+<td>{{user.email}}</td>
+<td>{{user.address.street}}</td>
+<td>{{user.address.city}}</td>
+<td><button type="button" ng-click="getDetails(user.id)">Get Detail</button></td>
+</tr>
+</table>
+  
+<div ng-if="showUserDetails">
+<h5> Selected User Detail </h5>
+<p>
+{{userDetails.body}}
+</p>
+</div>  
+</div>
+
+
+ </div>
+
+</div>

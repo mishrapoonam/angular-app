@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="app" block-ui style="height:100%">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/angular-block-ui.min.css">   
+    <link rel="stylesheet" type="text/css" href="resources/css/demo.css">
+  </head>
+
+  <body style="height:100%"> 
+    <div>
+    <div ng-include="'resources/app/layout/header/header.html'"></div>
+	<div ui-view style="height:100%">
+    </div>
+    </div>
+  
+    <script src="resources/js/jquery-1.11.3.min.js"></script>
+
+     <script src="resources/js/angular.min.js"></script> 
+    <script src="resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/angular-animate.min.js"></script> 
+    <script src="resources/js/angular-ui-router.min.js"></script>
+    <script src="resources/js/angular-sanitize.min.js"></script>
+    <script src="resources/js/ui-bootstrap-tpls-0.12.1.min.js"></script> 
+    <script src="resources/js/angular-block-ui.min.js"></script>
+    <script src="resources/app/app.module.js"></script>
+    <script src="resources/app/app.route.js"></script>
+    <script src="resources/app/demo/demo.module.js"></script>
+    <script src="resources/app/demo/demo.route.js"></script>
+	<script src="resources/app/demo/shared/services/demo.service.js"></script>
+    <script src="resources/app/demo/shared/services/modalPopUp.service.js"></script>
+    <script src="resources/app/demo/shared/directives/modalOpen.directive.js"></script>
+    <script src="resources/app/demo/shared/directives/modalClose.directive.js"></script>
+    <script src="resources/app/demo/shared/directives/demo.directive.js"></script>
+    <script src="resources/app/demo/shared/filter/demo.filter.js"></script>
+    <script src="resources/app/layout/header/header.js"></script>
+    <script src="resources/app/demo/home/demoHome.js"></script>
+	<script src="resources/app/demo/user/demoUser.js"></script>
+    <script src="resources/app/demo/employee/demoEmployee.js"></script>
+    <script src="resources/app/demo/employee/demoEditEmployee.js"></script>
+	<script src="resources/app/demo/employee/modals/addNewEmployeeModal.js"></script>
+ </body>
+ </html>
